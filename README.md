@@ -30,7 +30,7 @@ If you're unclear on the difference between Windows PowerShell and PowerShell, I
 
 ## Step 1:
 
-Clone, or download, this repo to your %USER% folder. 
+Download the [latest release](https://github.com/squidboi666/oshi-tracker/releases/download/v1.0.0/oshi-tracker.7z) to your %USER% folder. 
 
 Once downloaded, extract it.
 
@@ -56,7 +56,7 @@ Since we'll be using PowerShell instead of Windows PowerShell, the easiest way t
 4. If you downloaded and extracted this repo to the proper location, you should be able to navigate there via the command line like so:
 5. 
     ```bash
-    Set-Location "$env:USERPROFILE\Oshi-Tracker-main"
+    Set-Location "$env:USERPROFILE\oshi-tracker"
     ```
 
 6. Now to run our setup script, simply type:
