@@ -1,4 +1,4 @@
-
+#requires -PSEdition Core -Version 7.0
 # Import the module
 Import-Module BurntToast
 

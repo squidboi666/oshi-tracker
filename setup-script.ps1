@@ -1,4 +1,5 @@
-﻿
+﻿#requires -PSEdition Core -Version 7.0
+
 Write-Host @"
 
 
