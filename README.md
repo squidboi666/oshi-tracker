@@ -30,7 +30,7 @@ If you're unclear on the difference between Windows PowerShell and PowerShell, I
 
 ## Step 1:
 
-Download the [latest release](https://github.com/squidboi666/oshi-tracker/releases/download/v1.0.0/oshi-tracker.7z) to your %USER% folder. 
+Download the [latest release](https://github.com/squidboi666/oshi-tracker/releases/download/latest/oshi-tracker.7z) to your %USER% folder. 
 
 Once downloaded, extract it.
 
