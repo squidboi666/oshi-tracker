@@ -1,11 +1,10 @@
 # Oshi-Tracker
+---
+This is a multi-channel, livestream-only implementation of YT-DLP.
 
-This is a multi-channel, livestream only implementation of YT-DLP. 
+The setup script creates a .json file to store the channel URLs provided during setup. It also generates a folder for each channel, named accordingly. Additionally, the script checks if YT-DLP is properly set up in the system or user environment variables. If YT-DLP isn't detected, the script will install it via Winget and add it to your user environment variables.
 
-The setup script will create a .json file, where it will store the channel URLS that you provided at it's prompting. It will also create a folder for each of those channels, and name it after the channel. This setup script will also check if `yt-dlp` is properly set up in your system/user environment variables. If it isn't detected, it will use `winget` to install a full-featured `yt-dlp` package and add it to your user environment variables.
-
-
-The main script, `Oshi_Tracker.ps1`, will check each channel for new live streams every 5 minutes and download any new livestreams. It will **ONLY** download livestreams -- using the `--live-from-start` argument -- and will ignore any waiting rooms, VODs, shorts, or regular uploads. Livestreams will be downloaded to the folder that corresponds to the channel that they are being downloaded from.
+The main script, Oshi_Tracker.ps1, checks each channel for new live streams every 5 minutes and downloads any available streams. It only downloads live streams, using the --live-from-start argument, and ignores waiting rooms, VODs, shorts, and regular uploads. Each livestream is saved in the folder corresponding to the channel it was downloaded from.
 
 ---
 
