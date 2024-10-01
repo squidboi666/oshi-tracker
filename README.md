@@ -64,11 +64,11 @@ Since we'll be using PowerShell instead of Windows PowerShell, the easiest way t
     ./setup-script.ps1
     ```
 
-You'll be prompted to enter the YouTube URLs for each of your Oshi's channels. After doing so, you'll be greeted with a notification confirming your success. 
+You'll be prompted to enter the YouTube URLs for each of your Oshi's channels. Once you've done this, you'll receive a notification confirming that the setup was successful.
 
-You'll also notice that there are new folders in the project directory corresponding to each channel URL you added. **Do not rename them**, as new live streams will be saved in these folders.
+You'll also see new folders in the project directory, each corresponding to the channel URLs you added. Do not rename these folders, as new live streams will be saved there.
 
-You can run this script again at any time in the future to update the list of channels to track. Just be aware that it will overwrite the current list rather than append new entries. This is intentional.
+You can run this script again at any time to update the list of channels to track. Just note that it will overwrite the current list rather than append new entries—this is intentional.
 
 ---
 
