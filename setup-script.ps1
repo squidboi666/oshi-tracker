@@ -31,9 +31,10 @@ Write-Host "----------------------------------------------------------"
 Write-Host "------------------------------"
 
 # Prompt the user for the channel URLs
-Write-Host "Please enter the full channel URL(s) of your Oshi(s) that you wish to track. For multiple channels, make sure to separate each URL with a comma, and not to add any extra spaces."
+Write-Host "Please enter the channel urls that you would like to track. For multiple channels, please separate each URL with a comma and avoid adding any additional spaces before or after."
+Write-Host "e.g., https://www.youtube.com/@ReimuHakurei,https://www.youtube.com/@Koakuma"
 $oshis ="Enter the channel URL(s)"
-$oshisSplit = (Read-Host $oshis).Split(',')
+$oshisSplit = (Read-Host $oshis).Split(',') | ForEach-Object { $_.Trim() }  # Trim spaces for each URL
 
 # Create a list to store channel names and URLs
 $oshiList = @()
@@ -42,10 +43,12 @@ $oshiList = @()
 
 # Loop through each URL
 foreach ($url in $oshisSplit) {
+    
     $url = $url.Trim()
 
     $channelName = ($url -split '@')[1]  # Extracts the part after '@' (the channel name)
     $streamUrl = "$url/streams"
+    
     # Create a directory for each channel, using the channel name for the folder's name
     $oshiFolder = ".\$channelName"
     if (-not (Test-Path $oshiFolder)) {
